@@ -1,0 +1,839 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*CENTER TOP IS THE TOP PART OF THE SITE. SEE yjsg_main.php FOR REFERENCE*/
+#centertop, #centerbottom {
+  text-align:left;
+  margin:0 auto;
+  clear:both;
+  
+}
+
+/* CENTERBOTTOM IS THE BOTTOM PART OF THE SITE SEE yjsg_main.php FOR REFERENCE */
+#centerbottom {
+  position:relative; 
+}
+
+#header {
+  text-align:left;
+  position:relative;
+  padding:5px 0 5px 0;
+  overflow:hidden;
+  z-index:1000;
+}
+
+#logo {
+  float:left;
+  text-align:left;
+  overflow:hidden;
+}
+
+/* LOGO HOMEPAGE LINK */
+#logo a {
+  text-indent:-7500px;
+  display:block;
+  text-decoration:none;
+  width:100%;
+}
+
+/* main body layouts with  side modules
+--------------------- */
+/* HOLDER DIV CONTAINS LEFT, MAINBODY, RIGHT AND ALL INSETS */
+#holder, #holder2, #holder3 {
+  height:100% !Important;
+  height:1%;
+  overflow:hidden;
+  margin:0 auto;
+  text-align:center;
+  padding:5px 0;
+}
+
+/* layout1.php , layout2.php, layout3.php reset and layout1.php main floats. layout 1 does not contain insettop and insetbottom*/
+#leftblock, #midblock, #rightblock, #insetblock, #insetsholder_2t, #insetsholder_2b, #insetsholder_3t, #insetsholder_3b {
+  height:100% !Important;
+  height:1%;
+  overflow:hidden;
+  text-align:left;
+  float:left;
+}
+
+/* layout2.php*/
+#holder2 #midblock {
+  float:left;
+}
+
+#holder2 #leftblock, #holder2 #rightblock, #holder2 #insetblock {
+  float:right;
+}
+
+#holder2 #insetsholder_2t {
+  float:left;
+}
+
+#holder2 #insetsholder_2b {
+  float:right;
+}
+
+/*layout3.php*/
+#holder3 #midblock {
+  float:right;
+}
+
+#holder3 #leftblock, #holder3 #rightblock, #holder3 #insetblock {
+  float:left;
+}
+
+#holder3 #insetsholder_3t {
+  float:right;
+}
+
+#holder3 #insetsholder_3b {
+  float:left;
+}
+
+.clearm {
+  clear:both;
+  height:1px;
+  overflow:hidden;
+}
+
+/*END DEFAULT GRID LAYOUT*/
+
+/*BEGING YJSIMPLEGRID 
+#yjsg1 contains top1  - top5
+#yjsg2 contains adv1 - adv5
+#jsg3 contains user1 - user5
+#jsg4 contains user6 - user10
+#jsg5 contains user11 - user15
+#yjsg6 contains user16 - user20
+#yjsg7 contains user21 - user25
+#yjsgheadergrid contains logo div ,  header1 - header3
+#yjsgbodytop contains bodytop1 - bodytop3
+#yjsgbodybottom  contains boddybottom1 - bodybottom3
+*/
+#yjsgheadergrid {
+  float:right;
+  overflow:hidden;
+  height:auto;
+  margin:0;
+  padding:0;
+}
+
+#yjsg1, #yjsg2, #yjsg3, #yjsg4, #yjsg5, #yjsg6, #yjsg7, #yjsgbodytop, #yjsgbodybottom {
+  margin:0px auto 0px auto;
+  text-align:center;
+  overflow:hidden;
+  height:auto;
+  width:100%;
+  padding:15px 0;
+}
+#yjsg2{
+  margin-top:0;
+}
+#yjsgbodytop, #yjsgbodybottom {
+  width:100%;
+  padding:0 0 0px 0;
+  margin:0px 0 0px 0;
+  clear:both;
+}
+
+/* MAIN MODULE CONTAINER CLASS. FOR SPECIFIC STYLING
+   USE #user1 .yjsgxhtml or #user1 .yjsgxhtml .yjsquare  */
+.yjsgxhtml {
+  float:left;
+  clear:right;
+  text-align:left;
+  margin:0;
+  padding:0;
+}
+
+.yjsgxhtml .yjsquare_in {
+}
+
+/* EXAMPLE OF LAST MODULE IN THE GRID BG IMAGE OVERRIDE 
+   WE USED GRID1 MODULE POSITION TOP5. USEFULL FOR INSET LINE SEPARATOR BETWEEN MODULES*/
+#yjsg1 #top5 {
+/*background:none;*/
+}
+
+/* GUTTERS */
+/* SQUARE MODULES GUTTER */
+.yjsgxhtml .yjsquare {
+  margin:0 0;
+  padding:0 0;
+}
+
+/* yjplain */
+.yjplain{
+  padding:5px 10px;
+}
+.yjplain p {
+  padding:5px 10px;
+}
+
+/* KEEP LEFT, RIGHT, INSET, INSETTOP, INSET BOTTOM OF THE EDGES */
+#insetsholder_2t, #insetsholder_2b {
+  padding:0;
+  margin:0px 0 0 0;
+}
+
+.inside {
+  margin:0;
+  padding:0px 3px;
+  overflow:hidden;
+}
+
+/*KEEP MAINBODY GRID, BODYTOPS AND BODYBOTTOMS OF THE EDGE
+--------------------- */
+.insidem {
+  padding:0px 3px;
+  margin:0 0;
+}
+
+/*END GUTTERS*/
+/*FOOTER AND FOOTER LINKS
+--------------------- */
+#footer {
+  clear:both;
+  text-align:center;
+  overflow:hidden;
+  margin:0 auto;
+  padding:0px 0;
+  position:relative;
+  height:65px;
+}
+
+#youjoomla {
+  height:59px;
+  clear:both;
+  text-align:left;
+  padding:5px 10px;
+  overflow:hidden;
+}
+
+#footmod {
+  clear:both;
+  text-align:left;
+  padding:0;
+  margin:0px;
+  overflow:hidden;
+}
+
+#cp {
+  text-align:left;
+  padding:2px 0px;
+  overflow:hidden;
+}
+
+.yjsgcp span {
+  text-transform:capitalize;
+}
+
+.validators {
+  float:left;
+  text-align:left;
+}
+
+.yjsglogo {
+  position:absolute;
+  right:10px;
+  display:block;
+  top:10%;
+  height:48px;
+  width:229px;
+  margin:0;
+  padding:0;
+  background: url(../images/yjsglogo.png) no-repeat center center;
+}
+.yjsglogo span{
+  line-height:999px;
+}
+#joomlacredit {
+  padding:3px 0px 3px 0px;
+  text-align:left;
+  text-indent:10px;
+  margin:0 auto;
+}
+
+/* DEFAULT SQUARE MODULES. FOR ROUND MODULES OPEN rounded.css
+ALSO APPLIED ADDITIONAL MODULE CLASS FOR DIFFERENT MODULE STYLES. 
+TO ACTIVATE THEM ADD _yj1 or _yj2 IN MODULE MANAGER Module Class Suffix TEXT INPUT.
+STYLE FOR THESE MODULES IS IN COLOR.css file where COLOR IS YOUR CURRENT DEFAULT SITE STYLE
+--------------------- */
+/* MAIN MODULE HOLDER*/
+.yjsquare, .yjsquare_yj1, .yjsquare_yj2 {
+  margin: 5px 0 5px 0px!Important;
+  padding: 0px;
+  clear: both;
+  display:block;
+  height:100% !Important;
+  height:1%;
+  overflow:hidden;
+}
+
+/* MODULE TITLE */
+.yjsquare h4, .yjsquare_yj1 h4, .yjsquare_yj2 h4 {
+  text-transform: capitalize;
+  overflow:hidden;
+  padding:0;
+  margin:5px;
+  font-size:150%;
+}
+
+/* MODULE TITLE SPAN*/
+.yjsquare h4 span, .yjsquare_yj1 h4 span, .yjsquare_yj2 h4 span {
+  text-transform: capitalize;
+  overflow:hidden;
+}
+
+/* MODULE CONTENT*/
+.yjsquare_in, .yjsquare_yj1 .yjsquare_in, .yjsquare_yj2 .yjsquare_in {
+  overflow:hidden;
+  padding: 10px;
+}
+
+/* MODULE p ELEMENT*/
+.yjsquare p, .yjsquare_yj1 p, .yjsquare_yj2 p {
+  overflow:hidden;
+  padding:3px;
+}
+
+/*FOOTER MODULE STYLE
+--------------------- */
+#footmod .yjsquare {
+  padding:0;
+  margin:0;
+}
+
+#footmod .yjsquare h4 {
+}
+
+#footmod .yjsquare h4 span {
+}
+
+#footmod li, #footmod li:hover {
+  list-style-type:none;
+  list-style-image:none;
+  background:none;
+}
+
+#footmod ul {
+  padding:0;
+  margin:0;
+}
+
+#footmod ul li {
+  display: inline;
+  margin:0;
+  padding:0 10px 0 0;
+}
+
+#footmod ul li a {
+}
+
+/*PATHWAY*/
+#pathway {
+  padding:3px 5px;
+}
+
+#pathway .yjsg_breadcrumbs a.pathway {
+  margin:0 5px 0 0;
+  padding:0 15px 0 0;
+}
+
+/*SITE TOOLS DIV CONTAINING RTL/LTR SWITCH AND FONT RESIZER*/
+#tools {
+  position:absolute;
+  z-index:100;
+  left:200px;
+  bottom:33px;
+  padding:0px 0px 0 0px;
+  margin:0;
+  text-align:left;
+  width:auto;
+  font-weight:normal;
+  height:25px;
+  line-height:19px;
+}
+
+#tools .tdir {
+  font-size:80%;
+  margin:0 0 4px 0;
+}
+
+#tools .fs {
+  font-size:110%;
+  margin:0 7px 0 0;
+}
+
+#tools img {
+}
+
+/* ADDITIONAL MODULE STYLES */
+/*mod_poll
+--------------------- */
+.pollbuttons {
+  margin:0 auto;
+  text-align:center;
+}
+#button_holder{
+  padding:0;
+  margin:0 auto;
+  display:block;
+  overflow:hidden;
+  width:130px;
+  text-align:center;
+  text-transform:capitalize;
+}
+#button_holder .button{
+  float:left;
+}
+#button_holder .ressults{
+  float:right;
+}
+/*login module
+--------------------- */
+#modlgn_passwd, #modlgn_username {
+  width: 95%;
+  height:16px;
+  padding-left: 3px;
+  padding-top:3px;
+}
+
+/*searchbox
+--------------------- */
+.search {
+}
+
+.search .inputbox {
+}
+
+/*BANNER MODULE AND IMAGE .banner CLASS.
+USED FOR POSITIONING WHEN RESIZING LOGO AND HEADER BLOCK*/
+#yjsgheadergrid .bannergroup, #yjsgheadergrid .banner {
+  padding:15px 0 0 0;
+  text-align:right;
+}
+
+/* MODULE NEWS FLASH */
+div.yjsg-newsflash {
+  overflow: hidden;
+}
+
+div.yjsg-newsflash div.item {
+  padding-bottom: 15px;
+  overflow: hidden;
+}
+
+div.yjsg-newsflash div.last {
+  padding-bottom: 0px;
+}
+
+/* QUICK NAVIGATION FOOTER */
+
+ul.quick_nav {
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  background:none;
+}
+
+ul.quick_nav li {
+  display:block;
+  width:50%;
+  float:left;
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  background:none;
+  overflow:hidden;
+}
+
+ul.quick_nav li a {
+  height: 26px;
+  line-height: 20px;
+  text-decoration: none;
+  display: block;
+  text-decoration: none;
+  padding:5px 0 0 15px;
+}
+/* DEFAULT GRID OVERRIDES AND ADDITIONAL CSS. 
+NOTE! DO NOT EDIT ABOVE. USE CSS OVERRIDE FOR CHANGES. 
+IS EASIER TO SET BACK TO DEFAULT IF YOU MAKE MISTAKE.
+HERE IS CSS OVERRIDE EXAMPLE 
+http://www.youjoomla.com/how-to-use-module-css-override.html*/
+.YJSports_slide .YJSports_description div.title{
+  overflow:visible;
+}
+.slide_cat{
+  bottom:-15px;
+}
+/*TOP BANNER*/
+.yjsquare_banner{
+  float:right;
+}
+.yjsquare_banner .yjsquare_in{
+  padding:0;
+  margin:0;
+}
+/*YJSG2*/
+#yjsg2{
+  padding:0;
+}
+/*END YJSG2*/
+/*YJSG3*/
+#yjsg3{
+  font-size:11px;
+}
+#yjsg3 .yjsquare_in{
+  padding:10px!important;
+}
+#yjsg3 .yjsquare_in{
+  background:none
+    *url(../images/top4_divider.gif) no-repeat right center;
+}
+#yjsg3 #user5 .yjsquare_in{
+  background:none;
+}
+#yjsg3 h4,#yjsg3 h4 span{
+  height:20px;
+  line-height:20px;
+  font-size:10px;
+  font-weight:bold;
+  text-transform:uppercase;
+  margin:0;
+  padding:0 0 7px 4px;
+}
+/*END YJSG3 MODULES*/
+#yjsg4 {
+  padding:0;
+}
+/*YJNF Top Stories*/
+.yjsquare_topstorys h4{
+  text-transform: uppercase;
+  padding:0 0 0 10px;
+  margin:0;
+  height:49px;
+  font-size:13px;
+  font-weight:normal;
+  line-height:40px;
+}
+.yjsquare_topstorys .yjnewsflashu_in{
+  margin:9px 0;
+  padding:0px;
+  height:35px;
+  border:none;
+}
+.yjnewsflashu .itemcategory{
+  float:left;
+  clear:none;
+  font-weight:bold;
+  font-size:10px;
+  text-transform:uppercase;
+}
+/* NEWS ITEM TITLE */
+.yjnewsflashu a.itemtitle {
+  margin:0 0 5px 0;
+  font-size:11px;
+  font-weight:normal;
+  clear:none;
+}
+/*YJNF Yousports International Headlines*/
+.yjsquareys_top .yjsquare_in{
+  padding:0;
+  margin:0;
+}
+.yjsquareys_top h4 {
+  text-transform: uppercase;
+  overflow:hidden;
+  padding:0 0 0 10px;
+  margin:0;
+  height:48px;
+  font-size:13px;
+  font-weight:normal;
+  display:block;
+}
+.yjsquareys_top h4 span{
+  text-transform: uppercase;
+  overflow:hidden;
+  line-height:40px;
+}
+.yjsquareys_top .yjnewsflashu{
+  margin:9px 0 7px 10px;
+  padding:0;
+}
+.yjsquareys_top .yjnewsflashu_in {
+  padding:5px 0 5px 0;
+  margin:0;
+  border:none;
+}
+.yjsquareys_top .yjnewsflashu div.imageholder {
+  margin:0 10px 0 0;
+  padding:5px;
+}
+.yjsquareys_top .yjnewsflashu a.itemtitle {
+  clear:none;
+  font-size:10px;
+  font-weight:bold;
+  text-transform:uppercase;
+  margin:8px 0 0 0;
+  padding:0 0 5px 0;
+}
+.yjsquareys_top p.itemintro{
+  font-size:10px;
+}
+.yjnewsflashu a.itemreadmore {
+  text-indent:-999px;
+  border:none;
+  padding:0 0 0 0px;
+  margin:5px 25px 5px 25px;
+}
+.yjnewsflashu a.itemreadmore span {
+  padding:0px;
+}
+/*END YJNF Yousports International Headlines*/
+/*SAMPLE MODULE STYELS YJ1 AND YJ2*/
+.yjsquare_yj1 h4,
+.yjsquare_yj2 h4{
+  text-transform: uppercase;
+  overflow:hidden;
+  padding:0 0 0 10px;
+  margin:0;
+  height:48px;
+  font-size:13px;
+  font-weight:normal;
+  display:block;
+}
+.yjsquare_yj1 h4 span,
+.yjsquare_yj2 h4 span{
+  text-transform: uppercase;
+  overflow:hidden;
+  line-height:42px;
+}
+.yjsquare_yj1 p,
+.yjsquare_yj2 p{
+  overflow:hidden;
+  padding:3px;
+}
+.yjsquare_yj1 .yjsquare_in,
+.yjsquare_yj2 .yjsquare_in{
+  overflow:hidden;
+  padding:10px 5px;
+}
+.yjsquare_yj1,
+.yjsquare_yj2{
+  margin: 0px 0 0px 0px!important;
+  padding:0px;
+  clear: both;
+  display:block;
+  height:100% !Important;height:1%;
+  overflow:hidden;
+  position:relative;
+}
+/*_yj1*/
+.yjsquare_yj1 h4{
+  font-size:13px;
+}
+
+/*_yj2*/
+.yjsquare_yj2 h4{
+  font-size:13px;
+}
+
+/*END SAMPLE MODULE STYELS YJ1 AND YJ2*/
+#yjsg5{
+  padding:0;
+}
+/* YJNF 5.0*/
+.yjsquare_yj1 .yjnewsflash5_in{
+  border:none;
+  padding:10px 10px;
+}
+.yjsquare_yj1 .yjnewsflash5{
+  border:0;
+  font-size:10px;
+  line-height:17px;
+}
+.yjsquare_yj1 a.itemtitle{
+  font-size:11px;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+/*navigation*/
+.yjsquare_yj1 .yjnf5_nav{
+  position:absolute;
+  top:0;
+  width:28px;
+  height:38px;
+  right:0px;
+}
+.yjmf5_nav_b{
+  width:28px;
+  height:38px;
+  float:right;
+  display:block;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  clear:both;
+}
+#up,#down,#up_1,#down_1,
+#up_2,#down_2,#up_3,#down_3,
+#up_4,#down_4,#up_5,#down_5{
+  text-indent:-7500px;
+  display:block;
+  height:19px;
+  width:28px;
+  margin:0px;
+  padding:0;
+  overflow:hidden;
+}
+/* END YJNF 5.0*/
+/*TOP NEWSFLASH MODULES*/
+/* YJ Newsflash 2*/
+.yjsquare_top h4{
+  height:49px;
+  line-height:40px;
+  font-weight:normal;
+  font-size:13px;
+  text-transform:uppercase;
+  padding-left:10px;
+  margin:0;
+}
+.yjsquare_top .yj_news_flash_content{
+  font-size:10px;
+  line-height:17px;
+}
+.yjsquare_top .yj_news_flash_title a:link,
+.yjsquare_top .yj_news_flash_title a:visited{
+  font-size:11px;
+  line-height:17px;
+  font-weight:bold;
+}
+.yjsquare_top .yj_news_flash_title_only{
+  background:none;
+  padding:0 0 3px 0;
+}
+.yjsquare_top .yj_news_flash_title_only a{
+  font-size:10px;
+  line-height:17px;
+}
+.yjsquare_top .yj_news_flash_photo img{
+  padding:5px;
+  margin:4px 0px 10px 0px;
+}
+/*BOTTOM TITLE*/
+#bottoms{
+  margin:0 auto;
+  text-align:center;
+  overflow:hidden;
+  clear:both;
+}
+.bottom_title{
+  text-transform: uppercase;
+  overflow:hidden;
+  padding:0 0 0 10px;
+  margin:0;
+  height:48px;
+  font-size:13px;
+  font-weight:bold;
+  display:block;
+  line-height:48px;
+  text-align:left;
+}
+/*END BOTTOM TITLE*/
+.yjsquare_bot .yjsquare_in{
+  padding-right:0;
+  padding-left:0;
+}
+.yjsquare_bot h4{
+  font-size:12px;
+  text-transform:capitalize;
+  font-weight:bold;
+  padding-left:8px;
+}
+.yjsquare_bot h4 span{
+  line-height:14px;
+  font-size:12px;
+  text-transform:capitalize;
+  font-weight:bold;
+}
+.yjsquare_bot div.yj_news_flash_title_only a{
+  font-size:10px;
+  line-height:17px;
+}
+.yjsquare_bot a:link,
+.yjsquare_bot a:visited{
+  text-decoration:none;
+}
+.yjsquare_bot a:hover{
+  text-decoration:none;
+}
+#pathway{
+  font-size:11px;
+  padding:3px 5px 8px 5px;
+}
+span.modifydate{
+  text-transform:capitalize;
+  text-align:right;
+  font-size:9px;
+  font-style:italic;
+}
+.componentheading{
+  padding:5px!important;
+}
+#holder, #holder2, #holder3 {
+  padding:0;
+}
+.inside {
+  padding:0;
+}
+.insidem {
+  padding:0!important;
+  margin:0;
+}
+/*SQUARE*/
+.yjsquare{
+  padding:0!important;
+  margin:0!important;
+}
+.yjsquare h4{
+  height:49px;
+  line-height:40px;
+  font-weight:normal;
+  text-transform:uppercase;
+  padding-left:10px;
+  margin:0;
+  font-size:13px;
+}
+.yjsquare h4 span{
+  line-height:40px;
+  font-weight:normal;
+  text-transform:uppercase;
+  font-size:13px;
+}
+#yjsg1 .yjsquare h4 span,#yjsg2 .yjsquare h4 span,#yjsgheadergrid .yjsquare h4 span,#yjsg4 .yjsquare h4 span{
+  font-weight:normal;
+  text-transform:uppercase;
+  font-size:13px;
+}
+.footertext{
+  display:block;
+  padding:0px 0 15px 0;
+  margin:10px auto 0 auto;
+  text-align:center;
+  font-size:10px;
+}
+.mainlevel{
+  padding-left:5px;
+}

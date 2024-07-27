@@ -1,0 +1,728 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimplegrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*BODY ID'S USED FOR CSS FONT STYLES AND BASE SITE BODY STYLING  */
+body#stylef1, body#stylef2, body#stylef3, body#stylef4, body#stylef5, body#stylef6, body#stylef7, body#stylef8, body#stylef9, body#stylef10, body#stylef11, body#stylef12, body#stylef13, body#stylef14, body#stylef15, body#stylef16 {
+/*  background-image: url('../../../images/BackGrounds/Xmilia_03rep.jpg');
+  background-repeat:repeat;
+  background-position: center top; */
+  background-attachment:fixed;
+  background-color:#f1f0f6;  
+}
+#dark{
+  background:#171717 url(../images/red/bg_dark.jpg) no-repeat-x center top;
+}
+
+#light{
+  background:#F2F1EF url(http://www.romacorre.it/templates/yousports/images/bg_light.jpg) repeat center top;
+  
+
+}
+/* BOTTOM PART OF THE SITE LAYOUT. BASE WRAP */
+#centerbottom {
+  background:#fff url(../images/centerb_bg.gif) repeat-x center top;
+}
+/*GRIDS STYLING CAN BE USED TO STYLE EACH red DIFFERENTLY */
+#yjsg1 {
+  background:#F5F5F5;
+  color:#555;
+}
+#header {
+  background:none;
+}
+#logo {
+  background:url(../images/red/logo.png) no-repeat 0px 0px;
+}
+#yjsgheadergrid {
+  color:#efefef;
+}
+#yjsg2 {
+  background:#F5F5F5;
+}
+#yjsg3 {
+  background:none
+  color:#efefef;
+}
+#yjsg4 {
+  background:#F5F5F5;
+}
+#yjsg5 {
+  background:#F5F5F5;
+}
+#pathway {
+  background:#E9E8E8 url(../images/bot_line.gif) repeat-x left bottom;
+  color:#555555;
+}
+#pathway .yjsg_breadcrumbs a.pathway {
+  background: url(../images/arrow.png) no-repeat right center;
+}
+#yjsg6 {
+  background:#F5F5F5;
+}
+#yjsg7 {
+  background:#F5F5F5;
+  color:#555;
+}
+#footer {
+  background:url(../images/yjcp_left.png) no-repeat left top;
+  color:#3C3C3C;
+}
+#youjoomla {
+  background:url(../images/yjcp_right.png) no-repeat right top;
+}
+#joomlacredit {
+  background:#1F1F1F;
+  color:#474646;
+}
+/*TEMPLATE CSS 
+--------------------- */
+/* SITE LINKS */
+a:link, a:visited {
+  text-decoration: none;
+  color:#0000FF;
+}
+/* SITE HOVERS */
+a:focus, a:hover {
+  color:#1b1b1b;
+  text-decoration: none;
+}
+/*DIFFERENT STYLE FOR  LINKS ON DARK BG
+--------------------- */
+#footmod a, #youjoomla a, #pathway a {
+  color:#0000FF;
+}
+#footmod a:hover, #youjoomla a:hover, #pathway a:hover {
+  color:#1b1b1b;
+}
+/* SITE HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  color:#0000ff;
+}
+.small, .createdate, .modifydate, .createby { 
+  text-transform: uppercase;
+  color:#0000FF;
+  font-size:10px;
+}
+/* SITE TITLE, NEWS ITEM TITLE, MORE ARTICLES */
+.pagetitle, div.title h1, div.title h2, .yjsg-morearticles h3 {
+  color:#0000FF;
+  border-bottom:1px solid #0000FF;
+}
+.yjsg-morearticles h3 {
+  border:none;
+}
+/* NEWS ITEM TITLE WITH LINK*/
+div.title h1 a:link, div.title h1 a:visited, div.title h2 a:link, div.title h2 a:visited {
+  color:#0000FF;
+}
+div.title h1 a:hover, div.title h1 a:focus, div.title h2 a:hover, div.title h2 a:focus {
+  color:#727272;
+}
+/* FORM ELEMENTS */
+/* ARTICLE TABLE OF CONTENTS */
+fieldset, .toclink {
+  border:1px solid #c8c8c8;
+}
+/* FIELDSET IN MODULES */
+.yjsquare_in fieldset, .yjround_in fieldset {
+  border:none;
+}
+/* INPUTBOXES */
+.inputbox, #userreminder .required {
+  background: #FFFFFF;
+  border: 1px solid #c8c8c8;
+}
+.inputbox:hover, .inputbox:focus, #userreminder .required:hover, #userreminder .required:focus {
+  background: #F7F7F7;
+  border: 1px solid #525252;
+}
+/*BUTTONS
+--------------------- */
+.button {
+  color:#fff;
+}
+.button, .validate,.ressults {
+  background:#F2F1EF;
+  border:1px solid #0000FF; 
+  color:#0000FF
+}
+a.button:link, a.button:visited, a.button:focus {
+  color:#fff;
+  padding:3px;
+}
+.back_button a:hover, .back_button a:active {
+  color: #000;
+  text-decoration: none;
+}
+a.pagenav, .pagenav_prev a, .pagenav_next a, .pagenavbar a, .back_button a {
+  background:none;
+  border:none;
+  color:#0000FF;
+}
+a.readon:link, a.readon:visited {
+  background:url(../images/red/inter_readmore.gif) no-repeat left top;
+  border:none;
+  color:#0000FF;
+}
+/* ADDITIONAL SPAN READON CLASS FOR ROUND CORNERS */
+.readon span {
+  background:none;
+}
+a.readon:hover, .pagenavbar a:hover {
+  color:#727272;
+}
+/* THIS TEMPLATE IS EQUIPED WITH  ROUND AND SQUARE CORNERS
+TO SEE ROUND CORNERS SIMPLY CHANGE THE MODULE red STYLE IN TEMPLATE MANAGER
+UNDER ACCORDION ADVANCED OPTIONS. SEE ALSO rounded.css FILE".
+
+/* ROUND MODULES STYLING
+--------------------- */
+/* ROUND IMAGE. YOU CAN CHANGE TO YOUR OWN. 1 IMAGE TECHNIQUE USED */
+.yjround .content, .yjround .t, .yjround .b, .yjround .b div {
+  background:url(../images/red/rounded.png);
+  bac\kground:url(../images/red/rounded_ie.gif);
+}
+.yjround h4 {
+  color:#0000FF;
+  border-bottom:1px dashed #222222;
+}
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR */
+.yjround h4 span {
+  color:#0000FF;
+}
+/* SPECIFIC TEXT AND TITLE COLOR FOR GRIDS WITH DARK BACGROUND*/
+#yjsg1 .yjround .content, #yjsgheadergrid .yjround .content, #yjsg7 .yjround .content {
+  color:#0000FF;
+}
+.yjround_in {
+}
+/*SQUARE MODULES STYLE
+--------------------- */
+.yjsquare h4 {
+  color:#0000FF;
+}
+/* SPAN COLOR SHOWS FIRST */
+.yjsquare h4 span {
+  color:#0000FF;
+}
+.yjsquare {
+}
+.yjsquare_in {
+}
+/* ADDITIONAL MODULE STYLES */
+/* _yj1 */
+.yjsquare_yj1 h4 {
+}
+.yjsquare_yj1 h4 span {
+}
+.yjsquare_yj1 {
+}
+.yjsquare_yj1 .yjsquare_in {
+}
+/* _yj2 */
+.yjsquare_yj2 h4 {
+}
+.yjsquare_yj2 h4 span {
+}
+.yjsquare_yj2 {
+}
+.yjsquare_yj2 .yjsquare_in {
+}
+/*  SPECIFIC TEXT AND TITLE COLOR FOR GRIDS WITH DARK BACGROUND */
+#yjsg1 .yjsquare h4, #yjsg7 .yjsquare h4, #yjsgheadergrid .yjsquare h4 {
+  color:#1b1b1b;
+  background:url(../images/h3_bg.gif)no-repeat left top;
+}
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR*/
+#yjsg1 .yjsquare h4 span, #yjsg7 .yjsquare h4 span, #yjsgheadergrid .yjsquare h4 span {
+  color:#1b1b1b;
+}
+/*SEARCH INPUTBOX STYLING. CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+.search {
+}
+.search .inputbox {
+}
+/*LOGIN MODULE INPUTBOX CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+#modlgn_passwd, #modlgn_username {
+}
+#modlgn_passwd {
+}
+#modlgn_username {
+}
+#mod_login_remember {
+  border: none;
+  padding: 0!important;
+}
+/*TOP MENU STYLE FOR SPLIT MENU, CSS DROPDOWN AND SMOOTH DROPDOWN
+--------------------- */
+.horiznav {
+  background: url(../images/red/topmenu/horiz_bg.png) repeat-x 0 bottom;
+}
+/* MENU OVERRIDES */
+.YJSG_listContainer {
+  background:none;
+}
+/* NORMAL SUBTITLE */
+.horiznav ul li a span.yjm_desc {
+  color:#8b8b8b;
+}
+/*ACTIVE AND HOVER SUBTITLE*/
+.horiznav ul li.active a span.yjm_desc, .horiznav ul li a:hover span.yjm_desc, .horiznav ul li.sfHover a span.yjm_desc {
+  color:#8b8b8b;
+}
+/* NORMAL TOP LINKS */
+.horiznav ul li {
+  background: url(../images/red/topmenu/normal_l.png) no-repeat left center;
+}
+.horiznav ul li a, .horiznav ul li a:visited {
+  color: #efefef;
+  background: url(../images/red/topmenu/normal_r.png) no-repeat right center;
+}
+/* NORMAL TOP LINKS WITH CHILD ELEMENT */
+.horiznav ul li.haschild {
+  background: url(../images/red/topmenu/normal_l_haschild.png) no-repeat left center;
+}
+/* TOP LINKS HOVER */
+.horiznav ul li:hover, .horiznav ul li.sfHover {
+  background: url(../images/red/topmenu/hover_l.png) no-repeat left center;
+}
+.horiznav ul li a:hover, .horiznav ul li:hover a, .horiznav ul li.sfHover a,  .horiznav ul li.sfHoverHas a {
+  color: #efefef;
+  background: url(../images/red/topmenu/hover_r.png) no-repeat right center;
+}
+/* TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav ul li.haschild:hover {
+  background: url(../images/red/topmenu/hover_l_haschild.png) no-repeat left center;
+}
+.horiznav ul li.haschild a:hover {
+  color: #efefef;
+}
+/* ACTIVE TOP LINKS  */
+.horiznav li#current, .horiznav li.active {
+  background: url(../images/red/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a, .horiznav li.active a, .horiznav li.active a:visited, .horiznav li.active.sfHover a:visited, .horiznav li.active.sfHoverHas a:visited {
+  color: #efefef;
+  background: url(../images/red/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS WITH CHILD ELEMENT */
+.horiznav li#current.haschild, .horiznav li.haschild, .horiznav ul li.haschild.active, .horiznav ul li.sfHoverHas {
+  background: url(../images/red/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* ACTIVE TOP LINKS HOVER */
+.horiznav li#current:hover, .horiznav li#current.sfHover, .horiznav li.active:hover, .horiznav li.active.sfHover {
+  background: url(../images/red/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a:hover, .horiznav li#current.sfHover a:hover, .horiznav li.active a:hover {
+  color: #efefef;
+  background: url(../images/red/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav li#current.haschild:hover, .horiznav li#current.haschild.sfHoverHas, .horiznav li#current.active.sfHover {
+  background: url(../images/red/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* MAIN SUB UL AND MODULE BG */
+ul.subul_main.group_holder, .subul_main li.has_modpoz div.yj_menu_module_holder, .subul_main li.has_module div.yj_menu_module_holder, .subul_main li.haschild div.yj_menu_module_holder, .horiznav ul ul.subul_main.dropline {
+  background:#0a0809;
+}
+.yj_menu_module_holder {
+  color:#efefef;
+}
+.yj_menu_module_holder h4,
+.yj_menu_module_holder h4 span{
+  background:none!important;
+  color:#efefef;
+}
+/* end drpline extra */
+.horiznav ul ul.subul_main.dropline ul a, .horiznav ul ul.subul_main.dropline ul a:hover, ul.subul_main.dropline div.yj_menu_module_holder {
+  border-bottom: 1px solid #222222!important;
+}
+/*--- end dropline extra ---*/
+
+/* MAIN SUB ITEM*/
+.top_menu ul.subul_main li a {
+  background:#0a0809;
+  border-bottom: 1px solid #222222;
+  color: #efefef;
+}
+.top_menu ul.subul_main li a:visited {
+  color: #efefef;
+  background:#0a0809;
+}
+/*MAIN SUB ITEM HOVER*/
+.top_menu ul.subul_main li a:hover {
+  background:#222222;
+  color: #efefef;
+}
+.top_menu ul.subul_main li, .top_menu ul.subul_main li.active, .top_menu ul.subul_main li.active:visited, .top_menu ul.subul_main li.active:hover, .top_menu ul.subul_main li:hover, .top_menu ul.subul_main li:visited, .top_menu ul.subul_main li#current, .top_menu ul.subul_main li#current:hover {
+  border:none;
+  background:none;
+}
+/*MAIN SUB ACTIVE UL A ITEMS*/
+.top_menu li#current ul.subul_main li a, .top_menu li.active ul.subul_main li a {
+  background:#0a0809;
+  color: #efefef;
+}
+/*MAIN SUB ACTIVE UL ITEMS A HOVER*/
+.top_menu li#current ul.subul_main li a:hover, .top_menu li.active ul.subul_main li a:hover, .top_menu li#current.sfHover ul.subul_main li a:hover, .top_menu li.active.sfHover ul.subul_main li a:hover {
+  background:#222222;
+  color: #efefef;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM*/
+.top_menu ul.subul_main li#current a {
+  background:#222222;
+  color: #efefef;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM HOVER*/
+.top_menu ul.subul_main li#current a:hover, .top_menu ul.subul_main li#current.sfHover {
+  background:#2f2f2f;
+  color: #efefef;
+}
+/*SUB LEVEL PARENT ITEM ARROWS*/
+ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a {
+  background-image:url(../images/red/topmenu/arrow_right.gif)!important;
+  background-repeat:no-repeat!important;
+  background-position:95% 50%!important;
+}
+ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover {
+  background-image:url(../images/red/topmenu/arrow_down.gif)!important;
+  background-repeat:no-repeat!important;
+  background-position:95% 50%!important;
+}
+/* IE6 SPECIFIC */
+.horiznav li li.sfHover ul, .horiznav li li.sfHoverHas ul, .top_menu ul.subul_main.isie {
+  background:#292929;
+}
+/********************** CORNERS FOR MENU UL'S ***************************/
+/*TOP LEFT*/
+.horiznav li.tl, .horiznav li.tl:hover {
+  background:transparent url(../images/red/topmenu/corners/tl.png)!important;
+}
+/* TOP RIGHT*/
+.horiznav li.tr, .horiznav li.tr:hover {
+  background:transparent url(../images/red/topmenu/corners/tr.png) no-repeat right top!important;
+}
+/* BOTTOM RIGHT*/
+.horiznav li.br, .horiznav li.br:hover {
+  background:transparent url(../images/red/topmenu/corners/br.png) no-repeat right bottom!important;
+}
+/* BOTTOM LEFT*/
+.horiznav li.bl, .horiznav li.bl:hover {
+  background:transparent url(../images/red/topmenu/corners/bl.png) no-repeat left bottom!important;
+}
+/* RIGHT MIDDLE */
+.horiznav li.right, .horiznav li.right:hover {
+  background:transparent url(../images/red/topmenu/corners/right.png) no-repeat right bottom!important;
+}
+/********************** YJSG MEGA MENU STYLE ***************************/
+/* Group holder title*/
+.top_menu .horiznav .group_holder li.haschild a, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a {
+  color: #efefef;
+  border:none;
+  background:none;
+}
+.top_menu .horiznav .group_holder li.haschild a:hover, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a:hover {
+  color: #efefef;
+  background:#222222;
+}
+/* Group holder items title*/
+.top_menu .horiznav .group_holder li.haschild li a, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a {
+  color: #efefef;
+  border-bottom: 1px solid #222222;
+  background:#0a0809;
+}
+.top_menu .horiznav .group_holder li.haschild li a:hover, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a:hover {
+  color: #efefef;
+  background:#222222;
+}
+span.separator {
+  background:#0a0809;
+  border-bottom: 1px solid #222222;
+  color: #efefef;
+}
+/*Menu module links*/
+div.yj_menu_module_holder .yjsquare_in a:link, div.yj_menu_module_holder .yjsquare_in a:visited {
+  color:#121212!important;
+}
+div.yj_menu_module_holder .yjsquare_in a:focus, div.yj_menu_module_holder .yjsquare_in a:hover {
+  color:#525252!important;
+}
+/*SIDE MENU MODULE
+--------------------- */
+/* MENU NORMAL LINKS COLOR */
+#mainlevel li a, .menu li a, a.mainlevel {
+  background: url(../images/red/mainlevel.gif) no-repeat left top;/* LINKS BG IMAGE */
+  color:#727272;
+}
+/* HOVER AND ACTIVE LINKS BG IMAGE */
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel:hover, a.mainlevel#active_menu, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, .menu li a:hover, .menu li.active a {
+  background: url(../images/red/mainlevel.gif) no-repeat left bottom;
+}
+/* SUB LEVELS LI IMAGE */
+a.sublevel {
+  background: url(../images/red/bodyli.gif) no-repeat 5px 9px;
+}
+a.sublevel:hover {
+  text-decoration:underline;
+}
+/*MENU MODULE LINKS*/
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel#active_menu, a.sublevel, a.sublevel:hover, a.sublevel:active, a.sublevel:focus, #active_menu, a.mainlevel:hover, a.mainlevel:active, a.mainlevel:focus, li.active a, li.parent a {
+  color:#131313;
+}
+/* MENU MODULE ACTIVE AND SUB LEVELS LINK COLOR */
+li.active ul li a, a.sublevel#active_menu {
+  color:#525252;
+}
+/* MENU MODULE HOVER AND ACTIVE LINK COLOR AND BG */
+li.active ul li a:hover, li.active ul li.active a {
+  color:#525252;
+  background: url(../images/red/mainlevel.gif) no-repeat left top;
+}
+/* SITES LI IMAGE */
+ul li {
+  background: url(../images/red/bodyli.gif) no-repeat 0px 5px;
+}
+/*USER PAGES STYLE */
+#userlogin, #userlogout, #userregister, #userreminder {
+  background:none;
+}
+/* IMAGE CAPTIONS */
+p.img_caption {
+  background:#efefef;
+  border:1px solid #ccc;
+  text-shadow:1px 1px #fff;
+  text-transform:uppercase;
+  color:#5F5F5F;
+}
+/*Dropline*/
+.subul_main.dropline.level1 a{
+   background:none!important;
+}
+.subul_main.dropline.level1 a:hover,
+.subul_main.dropline.level1 li.active a{
+   background:none;
+   text-decoration:underline!important;
+}
+.subul_main.dropline.level2 a{
+   background:#0a0809!important;
+}
+.subul_main.dropline.level2 a:hover{
+   background:#222222!important;
+   text-decoration:none!important;
+}
+#yjsg3 h4,#yjsg3 h4 span{
+  background:none;
+  color:#eee;
+}
+#yjsg3 h4{
+  border-bottom:1px solid #393838;
+}
+/*YJNF Top Stories*/
+.yjsquare_topstorys h4{
+  color:#1B1B1B;
+  background:url(../images/h3_bg.gif) no-repeat left top;
+}
+.yjsquare_topstorys h4 span{
+  color:#1B1B1B;
+}
+.yjsquare_topstorys .yjnewsflashu_in{
+  background:url(../images/bot_line.gif) repeat-x left bottom;
+}
+.yjnewsflashu .itemcategory{
+  color:#D10707;
+}
+.yjnewsflashu a.itemtitle:link,
+.yjnewsflashu a.itemtitle:visited{
+  color:#1b1b1b;
+}
+.yjnewsflashu a.itemtitle:hover,
+.yjnewsflashu a.itemtitle:focus{
+  color:#D10707;
+}
+/*YJNF Yousports International Headlines*/
+.yjsquareys_top h4 {
+  color:#1B1B1B;
+  background:#fff url(../images/h3_bg_mid.gif) no-repeat left top;
+}
+.yjsquareys_top h4 span{
+  color:#1B1B1B;
+}
+.yjsquareys_top .yjsquare_in{
+  background:#fff url(../images/yjnf_top.gif) repeat-y left top;
+}
+.yjsquareys_top .yjnewsflashu div.imageholder {
+  border:1px solid #fff;
+  background:#EFEFEF;
+}
+.yjsquareys_top .yjnewsflashu a.itemtitle {
+  background:url(../images/bot_line.gif) repeat-x left bottom;
+}
+.yjnewsflashu a.itemreadmore {
+  background:url(../images/red/inter_readmore.gif) no-repeat right top;
+}
+.yjsquareys_top .yjnewsflashu a.itemtitle:link,
+.yjsquareys_top .yjnewsflashu a.itemtitle:visited{
+  color:#D10707;
+}
+.yjsquareys_top .yjnewsflashu a.itemtitle:focus,
+.yjsquareys_top .yjnewsflashu a.itemtitle:hover{
+  color:#1B1B1B;
+}
+/*SAMPLE MODULE STYELS YJ1 AND YJ2*/
+/*_yj1*/
+.yjsquare_yj1 h4{
+  color:#fff;
+  background:#2a2a2a url(../images/yj1_h3.gif) no-repeat left bottom;
+}
+.yjsquare_yj1 h4 span{
+  color:#fff;
+}
+.yjsquare_yj1{
+  background:#2a2a2a url(../images/yj1_bg.gif) repeat-y left top;
+  color:#eee;
+}
+.yjsquare_yj1 a:link,
+.yjsquare_yj1 a:visited{
+  color:#fff;
+}
+.yjsquare_yj1 a:hover{
+  color:#d10707;
+}
+/*_yj2*/
+.yjsquare_yj2 h4{
+  color:#fff;
+  background:#b60707 url(../images/red/yj2_h3.gif) no-repeat left bottom;
+}
+.yjsquare_yj2 h4 span{
+  color:#fff;
+}
+.yjsquare_yj2{
+  background:#b60707 url(../images/red/yj2_bg.gif) repeat-y left top;
+  color:#fff;
+}
+.yjsquare_yj2 a:link,
+.yjsquare_yj2 a:visited{
+  color:#fff;
+}
+.yjsquare_yj2 a:hover{
+  color:#1b1b1b;
+}
+/*END SAMPLE MODULE STYELS YJ1 AND YJ2*/
+/* YJNF 5.0*/
+.yjnewsflash5{
+  color:#eee;
+}
+.yjsquare_yj1 .yjnewsflash_title5{
+  color:#eee;
+}
+.yjnf5_h,.yjnf5_h_1,
+.yjnf5_h_2,.yjnf5_h_3,
+.yjnf5_h_4,.yjnf5_h_5{
+  background:#2a2a2a url(../images/yj1_bg.gif) repeat-y left top;
+}
+#down,#down_1,#down_2,#down_3,
+#down_4,#down_5{
+  background:url(../images/down.gif) no-repeat left center;
+}
+#down:hover,#down_1:hover,#down_2:hover,#down_3:hover,
+#down_4:hover,#down_5:hover{
+  background:url(../images/downh.gif) no-repeat left center;
+}
+#up,#up_1,#up_2,#up_3,#up_4,#up_5{
+  background:url(../images/up.gif) no-repeat left center;
+}
+#up:hover,#up_1:hover,#up_2:hover,#up_3:hover,#up_4:hover,#up_5:hover{
+  background:url(../images/uph.gif) no-repeat left center;
+}
+/* END YJNF 5.0*/
+/*TOP NEWSFLASH MODULES*/
+/* YJ Newsflash 2*/
+.yjsquare_top h4{
+  color:#1b1b1b;
+  background:url(../images/h3_bg_tops.gif) no-repeat left top;
+}
+.yjsquare_top .yjsquare_in{
+  background:url(../images/tops_bg.gif) no-repeat left top;
+}
+.yjsquare_top .yj_news_flash_title a:link,
+.yjsquare_top .yj_news_flash_title a:visited{
+  color:#1b1b1b;
+}
+.yjsquare_top .yj_news_flash_title a:hover,
+.yjsquare_top .yj_news_flash_title a:focus{
+  color:#d10707;
+}
+.yjsquare_top .yj_news_flash_title_only{
+  background:none;
+}
+.yjsquare_top .yj_news_flash_photo img{
+  border:1px solid #fff;
+  background:#fff;
+}
+.yj_news_flash_date{
+  color:#d10707;
+}
+/*BOTTOM TITLE*/
+#bottoms{
+  background:url(../images/bott_bg.gif) repeat-y left top;
+}
+.bottom_title{
+  color:#fff;
+  background: url(../images/bott_title.gif) no-repeat left bottom;
+}
+/*END BOTTOM TITLE*/
+#yjsgbodybottom{
+  color:#efefef;
+  background:url(../images/bott_bg.gif) repeat-y left top;
+}
+#yjsgbodybottom h4,#yjsgbodybottom h4 span{
+  color:#d10707;
+  background:none!important;
+}
+.yjsquare_bot div.yj_news_flash_title_only{
+  background:none;
+}
+.yjsquare_bot a:link,
+.yjsquare_bot a:visited{
+  color:#eee;
+}
+.yjsquare_bot a:hover{
+  color:#FE0000;
+}
+.componentheading{
+  color:#d10707;
+  border-bottom:1px solid #E4E4E4;
+}
+.title h1{
+  background:url(../images/bot_line.gif) repeat-x left bottom;
+  border:none!important;
+}
+.bignumber,.dropcap{
+  color:#d10707!important;
+}
+/*SQUARE*/
+.yjsquare h4{
+  background:url(../images/h3_bg.gif) no-repeat left top;
+}
+#yjsgheadergrid .yjsquare h4,#yjsgheadergrid .yjsquare h4 span{
+  color:#efefef!important;
+  background:none!important;
+}
+#rightblock,#leftblock,#insetblock,#yjsgbodytop{
+  background:#F5F5F5;
+}
+#topmenu_holder{
+  background:url(../images/red/topmenu/top_menu.png) no-repeat left top;
+}
